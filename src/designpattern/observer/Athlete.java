@@ -1,4 +1,4 @@
-package polytech.designpattern.observer;
+package designpattern.observer;
 
 import java.util.ArrayList;
 import java.util.Observable;
@@ -27,13 +27,14 @@ public class Athlete extends Observable implements Runnable{
 
 	@Override
 	public void run() {
+		//notifyObserver(false);
 		while(position < rt.getLength())
 		{
 			position++;
 			//if(p)
 			notifyObserver(false);
 			try {
-				Thread.sleep(200);
+				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

@@ -1,4 +1,4 @@
-package polytech.designpattern.observer;
+package designpattern.observer;
 
 import java.util.ArrayList;
 import java.util.Iterator;
