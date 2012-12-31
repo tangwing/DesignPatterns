@@ -34,7 +34,7 @@ public class Athlete extends Observable implements Runnable{
 			//if(p)
 			notifyObserver(false);
 			try {
-				Thread.sleep(1000);
+				Thread.sleep((long) (Math.random()*1000+500));
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

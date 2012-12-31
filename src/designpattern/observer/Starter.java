@@ -4,7 +4,7 @@ public class Starter {
 
 	public static RunningTrack rt = null;
 	public static SimpleObserver so = new SimpleObserver();
-	public static MyCanvasObserver mco = new MyCanvasObserver();
+	public static  MyCanvasObserver mco = new MyCanvasObserver();
 	/**
 	 * @param args
 	 */
@@ -27,10 +27,10 @@ public class Starter {
 	
 	public static void getReady()
 	{
-		rt = new RunningTrack(100);
+		rt = new RunningTrack(20);
 		for(int i=0; i<10; i++)
 		{
-			Athlete a = new Athlete(String.valueOf(('A'+i)), "French", i, rt);
+			Athlete a = new Athlete(String.valueOf((char)('A'+i)), "French", i, rt);
 			a.addObserver(mco);
 			rt.addAthlete(a);
 		}
